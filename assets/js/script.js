@@ -28,10 +28,10 @@ function runGame(gameType){
     let num2 = Math.floor(Math.random() * 25) + 1;
 
     if (gameType === "addition"){
-        displayAdditonQuestion(num1, num2);
+        displayAdditionQuestion(num1, num2);
     } else if (gameType === "subtract") {
         displaySubtractQuestion(num1, num2);
-    } else if (gameType == "multiply") {
+    } else if (gameType === "multiply") {
         displayMultiplyQuestion(num1, num2)
     } else if (gameType === "division") {
         displayDivisionQuestion(num1, num2);
@@ -91,7 +91,7 @@ function incrementWrongAnswer(){
 
 }
 
-function displayAdditonQuestion(operand1, operand2){
+function displayAdditionQuestion(operand1, operand2){
     document.getElementById('operand1').textContent = operand1;
     document.getElementById('operand2').textContent = operand2;
     document.getElementById('operator').textContent = "+";
