@@ -89,7 +89,7 @@ function calculateCorrectAnswer(){
  * Get current score from DOM then increment by 1
  */
 function incrementScore(){
-    let oldScore = parseInt(document.getElementById("Incorrect").innerText);
+    let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 }
 
@@ -97,8 +97,8 @@ function incrementScore(){
  * Get current score from DOM then increment by 1
  */
 function incrementWrongAnswer(){
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("Incorrect").innerText);
+    document.getElementById("Incorrect").innerText = ++oldScore;
 }
 
 function displayAdditionQuestion(operand1, operand2){
