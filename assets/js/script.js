@@ -15,8 +15,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
 })
 
-function runGame(){
+/**
+ * Main game loop called when script is loaded and after the user's
+ * answer has been proccessed.
+ */
 
+function runGame(){
+    let num1 = Math.floor(Math.random() * 25) + 1;
+    let num2 = Math.floor(Math.random() * 25) + 1;
 }
 
 function checkAnswer(){
