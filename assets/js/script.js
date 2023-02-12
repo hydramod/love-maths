@@ -29,7 +29,7 @@ function runGame(gameType){
 
     if (gameType === "addition"){
         displayAdditonQuestion(num1, num2);
-    } else if (gameType === "subratction") {
+    } else if (gameType === "subract") {
         displaySubtractQuestion(num1, num2);
     } else if (gameType == "multiply") {
         displayMultiplyQuestion(num1, num2)
