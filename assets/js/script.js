@@ -29,7 +29,7 @@ function runGame(gameType){
 
     if (gameType === "addition"){
         displayAdditonQuestion(num1, num2);
-    } else if (gameType === "subract") {
+    } else if (gameType === "subtract") {
         displaySubtractQuestion(num1, num2);
     } else if (gameType == "multiply") {
         displayMultiplyQuestion(num1, num2)
@@ -72,7 +72,7 @@ function calculateCorrectAnswer(){
     if (operator === "+") {
         return [operand1 + operand2, "addition"];
     } else if (operator === "-"){
-        return [operand1 - operand2, "subract"];
+        return [operand1 - operand2, "subtract"];
     } else if (operator === "*") {
         return [operand1 * operand2, "multiply"];
     } else if (operator === "/") {
